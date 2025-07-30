@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive UI</title>
+    <script>
+        // Simulated AI-based user preference prediction
+        function adaptUI(preference) {
+            if (preference > 4) {
+                document.getElementById("content").innerHTML = "Show Premium Content (High Preference)";
+            } else if (preference > 2) {
+                document.getElementById("content").innerHTML = "Show Standard Content (Medium Preference)";
+            } else {
+                document.getElementById("content").innerHTML = "Show Basic Content (Low Preference)";
+            }
+        }
+
+        // Simulate receiving predicted preference from backend AI model
+        const predictedPreference = 4.5;  // Example value from backend (e.g., 4.5 from the model)
+        window.onload = function() {
+            adaptUI(predictedPreference);  // Call adaptUI function when page loads
+        };
+    </script>
+</head>
+<body>
+    <div id="content">Loading...</div>
+</body>
+</html>
