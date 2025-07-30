@@ -33,7 +33,7 @@ To get started with this project, follow the steps below:
 
 Clone the repository to your local machine:
 
-git clone https://github.com/yourusername/adaptive-ui-project.git
+https://github.com/jmaddi5366/adaptive-ui-ai
 
 
 ### 2. Set up the backend
